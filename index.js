@@ -28,11 +28,16 @@ const create = createCircle(1)
 function Circle (radius) {
         this.radius = radius;
         this.draw = function () {
-            console.log("draw");
+            //console.log("draw");
         };
 }
 
 const circle1 = new Circle (1)
+
+for (let key in circle1) {
+    if (typeof circle[key] !== "function")
+    console.log(key, circle[key]) 
+}
 
 circle1.location = {
     x:1,
@@ -65,7 +70,7 @@ function increase (number) {
 }
 
 increase(number);
-console.log(number);
+//console.log(number);
 
 
 let obj = {value: 10};
@@ -75,5 +80,5 @@ function increase (obj) {
 }
 
 increase(obj);
-console.log(obj);
+//console.log(obj);
 

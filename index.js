@@ -82,3 +82,21 @@ function increase (obj) {
 increase(obj);
 //console.log(obj);
 
+// Constructor function
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// Adding a method to the prototype
+Person.prototype.greet = function() {
+    console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+};
+
+// Creating objects using the constructor function
+let person1 = new Person("Alice", 30);
+let person2 = new Person("Bob", 25);
+
+// Using the method inherited from the prototype
+person1.greet(); // Output: Hello, my name is Alice and I'm 30 years old.
+person2.greet(); // Output: Hello, my name is Bob and I'm 25 years old.

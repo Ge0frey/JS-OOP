@@ -5,7 +5,7 @@ const circle = {
         y:1
     },
     draw : function () {
-        console.log("draw");
+        //console.log("draw");
     }
 }
 
@@ -21,4 +21,16 @@ function createCircle (radius) {
     }
 }
 
-console.log(createCircle(1).draw());
+const create = createCircle(1)
+
+
+//constructor function 
+function Circle (radius) {
+        this.radius = radius;
+        this.draw = function () {
+            console.log("draw");
+        };
+}
+
+const another = new Circle (1)
+

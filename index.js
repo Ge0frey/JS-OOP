@@ -32,7 +32,15 @@ function Circle (radius) {
         };
 }
 
-const another = new Circle (1)
+const circle1 = new Circle (1)
+
+circle1.location = {
+    x:1,
+}
+
+delete circle1.location
+
+
 
 //every function in Javascript is an object
 
@@ -42,8 +50,30 @@ let y = x;
 
 x=20;
 
+
+//primitives are copid by their value 
+//Objects are copied by their reference
 //reference types are stored in memory as a reference value
 let p = {value: 30}
 let t = p;
 
+
+let number = 10;
+
+function increase (number) {
+    number++;
+}
+
+increase(number);
+console.log(number);
+
+
+let obj = {value: 10};
+
+function increase (obj) {
+    obj.value++;
+}
+
+increase(obj);
+console.log(obj);
 

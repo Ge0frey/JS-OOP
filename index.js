@@ -34,3 +34,16 @@ function Circle (radius) {
 
 const another = new Circle (1)
 
+//every function in Javascript is an object
+
+//difference between reference types and primitive types
+let x = 10;
+let y = x;
+
+x=20;
+
+//reference types are stored in memory as a reference value
+let p = {value: 30}
+let t = p;
+
+
